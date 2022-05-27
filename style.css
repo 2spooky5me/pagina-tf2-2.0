@@ -1,0 +1,373 @@
+* {
+    margin: 3;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --Fondo--oscuro--: #975713dd;
+    --Fondo--claro--: #727272cd;
+}
+
+@font-face {
+    font-family: 'TF2p';
+    src: url(fonts/TF2.ttf);
+}
+
+@font-face {
+    font-family: 'TF2s';
+    src: url(fonts/TF2secondary.ttf);
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    background-image: url(img/2fort.jpg);
+    background-size: 100%;
+    background-repeat: no repeat;
+    background-attachment:fixed;
+}
+
+.header img{
+    width: 8%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.navbar img{
+    width: 20%;
+    margin-left: 10%;
+    vertical-align:middle
+}
+
+.main img{
+    width: 70%;
+    margin-left: 14%;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+
+.main .mercenarios{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+.main .tf2videos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%;
+}
+
+.sidebar img{
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'header'
+    'navbar main sidebar'
+    'footer';
+    grid-gap: 10px;
+    grid-template-columns: 250px 1fr 240px;
+    grid-template-rows: 160px 1fr 40px;
+}
+
+.contenedor .header, .navbar , .main, .sidebar, .footer {
+    background-color: var(--Fondo--oscuro--);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.425);
+}
+
+.contenedor .header{
+    display: inline-block;
+    background-color: var(--Fondo--claro--);
+    color:antiquewhite;
+    font-family: 'TF2p';
+    font-size: 170%;
+    grid-column-start: 1 ;
+    grid-column-end: -1 ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor .navbar{
+    margin: 2%;
+    font-size: 170%;
+    background-color: var(--Fondo--oscuro--);;
+    color:antiquewhite;
+    font-family: 'TF2s';
+    text-align: center;
+    grid-row: span 5;
+}
+
+.contenedor .main{
+    margin: 5px;
+    background-color: var(--Fondo--oscuro--);;
+    color:antiquewhite;
+    font-family: 'TF2s';
+}
+
+.contenedor .main .h2{
+    font-size: 400%;
+    text-align: center;
+    margin-top: -2px;
+}
+
+.contenedor .main .h3{
+    font-size: 300%;
+    text-align: center;
+    margin-top: -2px;
+}
+
+
+.contenedor .main .texto{
+    font-size: 120%;
+    text-align: justify;
+    margin-top: -10px;
+}
+
+.contenedor .sidebar{
+    margin: 5px;
+    background-color: var(--Fondo--oscuro--);;
+    color:antiquewhite;
+    font-family: 'TF2s';
+}
+
+.contenedor .footer{
+    display: inline-block;
+    padding: 25px;
+    margin: 10px;
+    background-color: var(--Fondo--claro--);
+    color:antiquewhite;
+    font-family: 'TF2p';
+    grid-column-start: 2 ;
+    grid-column-end: -1 ;
+    text-align: center;
+}
+
+.contenedor .main .p3{
+    text-align: center;
+    font-size: 140%;
+}
+
+.contenedor .main .p4{
+    margin-top: -2%;
+    text-align: center;
+    font-size: 70%;
+}
+
+.contenedor .footer .p{
+    margin: 1px;
+    margin-top: -14px;
+    text-align: center;
+}
+
+.contenedor .footer .p2{
+    margin: 1px;
+    margin-top: -4px;
+    text-align: center;
+}
+
+.botonS { 
+    position: sticky;
+    top: 11%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonSS {
+    position: sticky;
+    top: 21%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonP {
+    position: sticky;
+    top: 31%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonD {
+    position: sticky;
+    top: 41%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonH {
+    position: sticky;
+    top: 51%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonE {
+    position: sticky;
+    top: 61%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonM {
+    position: sticky;
+    top: 71%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonSE {
+    position: sticky;
+    top: 81%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonSY {
+    position: sticky;
+    top: 91%;
+    margin-bottom: -7%;
+    margin-left: -3%;
+    font-family: 'TF2s';
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.3rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonC {
+    font-family: 'TF2s';
+    position: sticky;
+    top: 51%;
+    padding: 4px;
+    border: none;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    box-shadow: inset 0 0 0 0 #975713dd;
+    transition: ease-out 0.3s;
+    outline:auto;
+}
+
+.botonS, .botonSS, .botonP, .botonD, .botonH, .botonE, .botonM, .botonSE, .botonSY, .botonC:hover{
+    cursor: pointer;
+}
+
+.texto{
+    font-size: 90%;
+}
+
+.contenedor .sidebar .texto{
+    font-size: 90%;
+    text-align: justify;
+}
+
+.textM{
+    position: sticky;
+    top: 15px;
+}
+
+.tf2logoS{
+    position: sticky;
+    top: 50px;
+}
